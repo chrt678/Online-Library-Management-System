@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Book | Library Management</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-wrapper {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 600px;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 15px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2>📘 Add a New Book</h2>
+    <form method="post" action="/addBook">
+      <label for="bookTitle">Book Title</label>
+      <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter Book Title" required />
+
+      <label for="bookAuthor">Author</label>
+      <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter Author Name" required />
+
+      <label for="bookCategory">Book Category</label>
+      <input type="text" id="bookCategory" name="bookCategory" placeholder="Enter Category" required />
+
+      <label for="bookAvailableCopies">Available Copies</label>
+      <input type="number" id="bookAvailableCopies" name="bookAvailableCopies" min="0" placeholder="Enter number of copies" required />
+
+      <button type="submit">Add Book</button>
+      <a class="link" href="/admin">🏠 Back to Admin Home</a>
+    </form>
+    <div class="footer">Library Management System © 2025</div>
+  </div>
+</body>
+</html>
+

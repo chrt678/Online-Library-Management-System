@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Available Books</title>
+</head>
+<style>
+	
+	body {
+	     font-family: 'Segoe UI', sans-serif;
+	     background: linear-gradient(135deg, #e0f7fa, #f0f4f8);
+	     padding: 40px;
+	   }
+	   table {
+	     width: 100%;
+	     border-collapse: collapse;
+	     background-color: rgba(255, 255, 255, 0.95);
+	     border-radius: 12px;
+	     overflow: hidden;
+	     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+	   }
+	   th, td {
+	     padding: 14px 16px;
+	     text-align: left;
+	     border-bottom: 1px solid #ddd;
+	   }
+	   th {
+	     background-color: #0078D7;
+	     color: white;
+	   }
+	   tr:hover {
+	     background-color: #f1f1f1;
+	   }
+	   h2 {
+	     text-align: center;
+	     color: #0078D7;
+	     margin-bottom: 30px;
+	   }
+	
+	a
+	{
+		padding-left: 500px;
+	}
+	
+</style>
+<body>
+<h2>Available Books</h2>
+
+<form th:action="@{/books}" method="get">
+    <label>Search by Author:</label>
+    <input type="text" name="bookAuthor" placeholder="Enter Author Name">
+
+    <label>Filter by Category:</label>
+    <input type="text" name="bookCategory" placeholder="Enter Category">
+
+    <button type="submit">Search</button>
+</form>
+
+<hr>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Available Copies</th>
+        </tr>
+		</thead>	
+				 <tbody>
+			        <tr th:each="book : ${books}">
+			            <td th:text="${book.bookId}"></td>
+			            <td th:text="${book.bookTitle}"></td>
+			            <td th:text="${book.bookAuthor}"></td>
+			            <td th:text="${book.bookCategory}"></td>
+			            <td th:text="${book.bookAvailableCopies}"></td>
+			        </tr>
+			    </tbody>
+			</table>
+			<br/>
+			<br/>
+			<a href="/user"><button>UserPage</button></a>
+			</body>
+			</html>
+    
