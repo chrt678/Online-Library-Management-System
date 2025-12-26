@@ -11,9 +11,10 @@ Secure JWT authentication and CSRF protection
 Dynamic dashboards for Admin and Users
 **
 
-🖥️ Screenshots / UI Preview:
+🖥️ Screenshots / UI 
 
-Admin Dashboard
+ Admin Dashboard 
+OnlineLibraryManagementSystem/Screenshot_20251226_113533_LinkedIn.jpg
 
 
 User Dashboard
