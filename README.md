@@ -18,18 +18,13 @@ A full-stack, secure library management system built using:
 | Security | Secure JWT authentication and CSRF protection |
 | Dashboards | Dynamic dashboards for Admin and Users |
 
-## 🖥️ Screenshots / UI 
 
- Admin Dashboard 
-OnlineLibraryManagementSystem/Screenshot_20251226_113533_LinkedIn.jpg
+# Screenshots
 
-
-User Dashboard
-OnlineLibraryManagementSystem/Screenshot_20251226_113516_LinkedIn.jpg
-
-
-Book Issue & Return Flow
-
+| Dashboard | Screenshot |
+|-----------|------------|
+| Admin Dashboard | ![Admin Dashboard](OnlineLibraryManagementSystem/Screenshot_20251226_113533_LinkedIn.jpg) |
+| User Dashboard | ![User Dashboard](OnlineLibraryManagementSystem/Screenshot_20251226_113516_LinkedIn.jpg) |
 
 ## 🛠️ Tech Stack:
 
