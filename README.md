@@ -9,12 +9,14 @@ Spring Security,
 JWT
 SQL.
 
-** 
-Manages books, categories, users, issue/return flows, and automated fines
-Role-based access: Admin and User
-Secure JWT authentication and CSRF protection
-Dynamic dashboards for Admin and Users
-**
+# Library Management System
+
+| Feature | Description |
+|---------|-------------|
+| Book & Category Management | Manages books, categories, users, issue/return flows, and automated fines |
+| Role-Based Access | Admin and User |
+| Security | Secure JWT authentication and CSRF protection |
+| Dashboards | Dynamic dashboards for Admin and Users |
 
 ## 🖥️ Screenshots / UI 
 
