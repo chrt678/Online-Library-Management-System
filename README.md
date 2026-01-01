@@ -2,7 +2,12 @@
 
 A full-stack, secure library management system built using:
 
-Java, Spring Boot, Thymeleaf, Spring Security, JWT, and SQL.
+Java, 
+Spring Boot, 
+Thymeleaf, 
+Spring Security, 
+JWT
+SQL.
 
 ** 
 Manages books, categories, users, issue/return flows, and automated fines
