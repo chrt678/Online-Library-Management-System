@@ -2,12 +2,12 @@
 
 A full-stack, secure library management system built using:
 
-Java, 
-Spring Boot, 
-Thymeleaf, 
-Spring Security, 
-JWT
-SQL.
+- Java
+- Spring Boot
+- Thymeleaf
+- Spring Security
+- JWT
+- SQL
 
 # Library Management System
 
@@ -33,8 +33,6 @@ Book Issue & Return Flow
 
 ## 🛠️ Tech Stack:
 
-
-
 | Category | Technologies |
 |--------|--------------|
 | **Backend** | Java, Spring Boot |
@@ -45,56 +43,19 @@ Book Issue & Return Flow
 | **Version Control** | GitHub |
 
 
-## 👤 Key Features:
+# Library Management System
 
-1.🔐 Authentication & Authorization
-......................................
-Secure Login / Logout
-
-JWT token-based authentication
-Role-based access (Admin / User).
-
-Unauthorized access blocked.
-
-2.📘 Book Management (Admin)
-
-Add / Update / Delete books
-
-Assign to categories
-
-Track availability status
-
-🗂️ Category Management
-
-Create / Update / Delete categories
-
-Category-wise book listing
-
-🔄 Issue & Return System
-
-Automatic issue & due date calculation
-Real-time status update
-Overdue fine calculation.
-
-🔍 Search & Listing
-
-Search by Title, Author, Category
-Pagination for large lists.
-
-📊 Dashboard 
-Admin: Total books, issued books, users, pending returns
-User: Issued books, due dates, fines.
+| Module | Features |
+|--------|----------|
+| 🔐 Authentication & Authorization | Secure Login / Logout<br>JWT token-based authentication<br>Role-based access (Admin / User)<br>Unauthorized access blocked |
+| 📘 Book Management (Admin) | Add / Update / Delete books<br>Assign to categories<br>Track availability status |
+| 🗂️ Category Management | Create / Update / Delete categories<br>Category-wise book listing |
+| 🔄 Issue & Return System | Automatic issue & due date calculation<br>Real-time status update<br>Overdue fine calculation |
+| 🔍 Search & Listing | Search by Title, Author, Category<br>Pagination for large lists |
+| 📊 Dashboard | Admin: Total books, issued books, users, pending returns<br>User: Issued books, due dates, fines |
+| 🔐 Security Highlights | Custom UserDetailsService for authentication<br>BCrypt password encryption<br>Secured endpoints using Spring Security + JWT<br>Role-based access control & CSRF handled |
 
 
-## 🔐 Security Highlights:
-
-Custom UserDetailsService for authentication.
-
-BCrypt password encryption
-
-Secured endpoints using Spring Security + JWT
-
-Role-based access control & CSRF handled
 
 ## 📝 API Endpoints (Summary):
 
